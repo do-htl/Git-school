@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1601228781 source:c:\git-school\loop-exercise\main.c
+	<stdio.h>
+	<stdlib.h>
+
