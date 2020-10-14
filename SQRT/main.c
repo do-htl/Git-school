@@ -11,10 +11,9 @@
     used to get rid of the multiplication command (*)
 */
 int multiplication(int cnt){
-    int step, cntsqrt = 0;
-    for(step = 0; step != cnt; step++){
-        int step2;
-        for(step2 = 0; step2 != cnt; step2++){
+    int cntsqrt = 0;
+    for(int step = 0; step != cnt; step++){
+        for(int step2 = 0; step2 != cnt; step2++){
             cntsqrt++;
         }
     }
@@ -27,8 +26,7 @@ int multiplication(int cnt){
     than the given one
 */
 int my_sqrt(int x){
-    int cnt;
-    for(cnt = 0; cnt <= x; cnt++){
+    for(int cnt = 0; cnt <= x; cnt++){
         int cntsqrt = multiplication(cnt);
         if(cntsqrt != x){
             int save = cnt;
@@ -50,10 +48,10 @@ int my_sqrt(int x){
 int main()
 { int i, answer;
 
-    printf("Gib die Zahl ein, von der die Wurzel gezogen werden soll!\n");
+    printf("Gib die Zahl ein, von der die Wurzel gezogen werden soll: ");
     scanf("%d",&i);
 
     answer = my_sqrt(i);
-    printf("Die Wurzel von %d ist: %d",i, answer);
+    printf("\nDie Wurzel von %d ist: %d\n",i, answer);
     return 0;
 }

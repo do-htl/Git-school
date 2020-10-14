@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1602615015 source:c:\git-school\pointer-exercise\main.c
+	<stdio.h>
+	<stdlib.h>
+

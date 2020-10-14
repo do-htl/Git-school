@@ -1,6 +1,6 @@
 /*  Author: Oberhofer Daniel
     Date: 3.10.2020
-    Function: Sieve of Erastosthenes
+    Function: Sieve of Eratosthenes
 */
 
 #include <stdio.h>
@@ -13,10 +13,9 @@
     the other loop crosses out the multiples
 */
 int *sieve(int *primes){
-    int cnt, step;
     primes[1] = 0;
-    for(step = 2; step <= 20;){
-        for(cnt = 2 * step; cnt <= 500; cnt +=step){
+    for(int step = 2; step <= 20;){
+        for(int cnt = 2 * step; cnt <= 500; cnt +=step){
             primes[cnt]=0;
         }
         step++;
@@ -30,8 +29,7 @@ int *sieve(int *primes){
     from 0 to 500
 */
 int *getarray(int *array){
-    int i;
-    for(i=0;i<=500;i++)
+    for(int i=0;i<=500;i++)
     {
         array[i]=i;
     }
@@ -39,14 +37,14 @@ int *getarray(int *array){
 }
 
 int main()
-{int *n, *primes;
- int i, array[501];
- n=getarray(array);
+{int *numbers, *primes;
+ int array[501];
+ numbers=getarray(array);
 
- primes = sieve(n);
+ primes = sieve(numbers);
 
   printf("Primzahlen von 0 bis 500: \n\n");
-  for(i=0;i<=500;i++)
+  for(int i=0;i<=500;i++)
     {
         if(primes[i] == 0){     //used for better visual presentation of the primes
             printf("");         //gets rid of the crossed out numbers
@@ -54,5 +52,6 @@ int main()
         }
         printf(" %d ", primes[i]);
         }
+    printf("\n");
     return 0;
 }
