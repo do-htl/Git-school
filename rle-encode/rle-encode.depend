@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1602945509 source:c:\git-school\rle-encode\main.c
+	<stdio.h>
+	<stdlib.h>
+
