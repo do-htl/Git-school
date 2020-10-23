@@ -2,6 +2,7 @@
     Date: 17.10.2020
     Function: rle-encode
     rle - run-length encoding
+    Github-repo: https://github.com/do-htl/Git-school.git
 */
 
 #include <stdio.h>
