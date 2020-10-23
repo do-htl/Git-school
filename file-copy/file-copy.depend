@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1603459423 source:c:\git-school\file-copy\main.c
+	<stdio.h>
+	<stdlib.h>
+	<fcntl.h>
+
