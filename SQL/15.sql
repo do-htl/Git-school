@@ -1,0 +1,1 @@
+select Count(employee_id) from employees

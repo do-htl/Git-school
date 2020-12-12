@@ -16,7 +16,7 @@
     same data value occurs in consecutive data elements
 
     Using an allocated memory block for the result with the
-    size (length * 2) because when the data value changes allm
+    size (length * 2) because when the data value changes all
     the time e.g.: FOFO it would be F1O1F1O1
     resulting in the size being twice as big as the original one
 */
