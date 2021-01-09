@@ -1,1 +1,1 @@
-select Count(employee_id) from employees
+select first_name,last_name,ROUND(salary/12,2) from employees

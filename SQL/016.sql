@@ -1,1 +1,1 @@
-select Count(employee_id) from employees
+select first_name,last_name,length(first_name||last_name) from employees
