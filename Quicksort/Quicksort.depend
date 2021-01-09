@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1610195394 source:c:\git-school\quicksort\main.c
+	<assert.h>
+	<stdio.h>
+	<stdlib.h>
+	<sys/time.h>
+	<sys/stat.h>
+
